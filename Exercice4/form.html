@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>User</title>
+        <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="public/css/style.css" />
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    <body >
+       
+        <div >
+            <ul >
+                <li>  <a  id="DeviceName"> </a></li> 
+            </ul>
+       </div> 
+        <main>
+            <section class="glass">
+                <div class="dashboard">
+                 <div>
+                    <div class="user">
+                        <img src="public/image/avatar.jpeg" alt="Mamadou yaya cherif" style="width: 90%; height: 59%;">
+                        <h3>Yaya Cherif</h3>
+                        <p> Pro Menber</p>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <img src="public/image/favicon.ico" alt="" style="width: 20%; height: 20%;"/>
+                            <h2> <a href="../Exercice1/form.html">Exercice 1</a></h2>
+                        </div>
+                        <div class="link">
+                            <img src="public/image/img-01.png" alt="" style="width: 20%; height: 20%;"/>
+                            <h2> <a href="../Exercice2/form.html">Exercice 2</a></h2>
+                        </div>
+                        <div class="link">
+                            <img src="public/image/img-01.png" alt="" style="width: 20%; height: 20%;"/>
+                            <h2> <a href="../Exercice3/form.html">Exercice 3</a></h2>
+                        </div>
+                        <div class="link">
+                            <img src="public/image/img-01.png" alt="" style="width: 20%; height: 20%;"/>
+                            <h2> <a href="form.html">Exercice 4</a></h2>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="games" >
+                    <div class="modal2 "  id="modal2" >
+                        <div class="modal-head">
+             
+                            <div class="title" id="title"> Example Model
+             
+                            </div>
+                            <button data-close-button class="close-button"> x </button>
+                        </div>
+                        <div class="modal-body" id ="mmbody">
+                             <div  style=" float: left; width: 50%;">
+                                 <img src="" id="images">
+                                 <div id="Unite">
+                                         Unite Price
+                                 </div>
+                             </div>
+                             <div style=" float: right; width: 50%;">
+                                 <div class="form-group">
+                                     <label> Roum Category</label>
+                                             <select aria-placeholder="Rome Category"  type="text"  id="roumCate" >
+                                                 <option required >Standard-200 GHS</option>
+                                                 <option required >Double-350 GHS</option>
+                                                 <option required >Executive-600 GHS</option>
+                                             </select>
+                                 </div>
+                                 <div class="form-group">
+                                     <label> Check In Date</label>
+                                     <input id="chechIn" type="date">
+                                 </div>
+                                 <div class="form-group">
+                                     <label> Check Out Date</label>
+                                     <input id="chechout" type="date">
+                                 </div>
+             
+                                 <div class="form-group">
+                                     <button class="btn btn1" id="SubmiteBtn"> SEND</button>
+                                 </div>
+                                  
+                                  <label>  </label>
+                                  <input id="Night" type="text" placeholder="Night" readonly style="width: 43%; float: left;">
+                                  <input id="Amount" type="text" placeholder="Amount" readonly style="width: 43%; float: right;">
+                             </div>
+                            
+                        </div>
+                       
+                    </div>
+                    <div  id="overlay"> </div>
+                    
+                    <div style=" background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255,255,255,0.3)); " >
+                         <div class="panel panel-primary">
+                             <div class="panel-heading">ACCRA HOTEL</div>
+                             <div class="panel-body">
+                                 <div>
+                                     <div style="float: left; width: 50%;">
+                                         <img src="images/img1.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(0)"> BOOK</button>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                     <div style="float: right; width: 50%;">
+                                         <img src="images/hote5.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1"  onclick="bookRoum(1)"> BOOK</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+                    </div>
+             
+                     <div style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255,255,255,0.3));">
+                         <div class="panel panel-primary">
+                             <div class="panel-heading"> TAMALA HOTEL</div>
+                             <div class="panel-body">
+                                 <div>
+                                     <div style="float: left; width: 50%;">
+                                         <img src="images/voltaH.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(2)"> BOOK</button>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                     <div style="float: right; width: 50%;">
+                                         <img src="images/volta2.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(3)"> BOOK</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+                     </div>
+             
+                     <div style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255,255,255,0.3)); ">
+                         <div class="panel panel-primary">
+                             <div class="panel-heading">KUMASI HOTEL</div>
+                             <div class="panel-body">
+                                 <div>
+                                     <div style="float: left; width: 50%;">
+                                         <img src="images/hotel4.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(4)"> BOOK</button>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                     <div style="float: right; width: 50%;">
+                                         <img src="images/thos.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1"  onclick="bookRoum(5)"> BOOK</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+                    </div>
+             
+                     <div style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255,255,255,0.3)); " >
+                         <div class="panel panel-primary">
+                             <div class="panel-heading">CAPE COAST HOTEL</div>
+                             <div class="panel-body">
+                                 <div>
+                                     <div style="float: left; width: 50%;">
+                                         <img src="images/hotelA1.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(6)"> BOOK</button>
+                                         </div>
+                                         
+                                     </div>
+                                     
+                                     <div style="float: right; width: 50%;">
+                                         <img src="images/hotelA2.jpg" style="width: 95%;" />
+                                         <div>
+                                             <button data-modal-target="#modal2" class="btn btn1" onclick="bookRoum(7)"> BOOK</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+                    </div>
+                </div>
+               
+            </section>
+        </main>
+        <div class="cercle1"> </div>
+        <div class="cercle2">  </div>
+        <script src="js/form.js"></script>
+    </body>
+</html>
